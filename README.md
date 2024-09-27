@@ -3,7 +3,7 @@
 <h3>Overview</h3>
 <p>This project is a blog application designed for a cybersecurity company. It allows users to register, log in, and manage their posts, while also enabling anonymous feedback submission. Additionally, users can apply for job openings, and superusers have access to manage all posts and applications.</p>
 <h3>Features</h3>
-User Authentication: Users can register and log in to access their personal posts.
+User Authentication: Users can register and log in to access their personal posts.<br>
 CRUD Operations:
     Users can create, read, update, and delete their own posts.
     Superusers can manage all posts in the system.
