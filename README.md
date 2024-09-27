@@ -19,13 +19,28 @@ CRUD Operations:
 <br><h3>Test GIFs</h3>
 <br>Here are some test demonstrations showing how the main functions of the application work.
     <br>Feedback Test:
-    <br>Post Test:
-<br>    Apply Test (Anonymous):
+    ![Alt text](https://github.com/Barbarossa01/django-cybersecurity-blog/blob/main/tests/Feedback.gif)
+
+    <br>
+   Post Test:
+   ![Alt text](https://github.com/Barbarossa01/django-cybersecurity-blog/blob/main/tests/Post.gif)
+
+<br>    Apply Test (Anonymous):    
+![Alt text](https://github.com/Barbarossa01/django-cybersecurity-blog/blob/main/tests/applyToJob.gif)
+
    <br> Editing Post in Admin Panel:
+    ![Alt text](https://github.com/Barbarossa01/django-cybersecurity-blog/blob/main/tests/EditPost.gif)
+
    <br> Related Post Functionality:
+    ![Alt text](https://github.com/Barbarossa01/django-cybersecurity-blog/blob/main/tests/RelatedPost.gif)
+
    <br> Broken Access Control Test:
-    <br>  An unprivileged user (Anas) can delete a post created by another user (Barbarossa) by manipulating the URL.
+    ![Alt text](https://github.com/Barbarossa01/django-cybersecurity-blog/blob/main/tests/BrokenAccessControl.gif)
+
+    <br>  
+   An unprivileged user (Anas) can delete a post created by another user (Barbarossa) by manipulating the URL.
     <br> Fixed Broken Access Control:
+        ![Alt text](https://github.com/Barbarossa01/django-cybersecurity-blog/blob/main/tests/FixedBrokenAccessControl.gif)
      <br> This issue was fixed using UserPassesTestMixin and a custom test_func to check if the user is the post owner or a superuser.
 <br> <h3>Technology Stack</h3>
 <br>Backend Framework: Django
