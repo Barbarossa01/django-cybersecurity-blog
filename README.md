@@ -77,7 +77,7 @@
 
 <h2>Installation</h2>
 <ol>
-  <li>Clone the repository: <code>git clone &lt;repository-url&gt;</code></li>
+  <li>Clone the repository: <code>git clone https://github.com/Barbarossa01/django-cybersecurity-blog</code></li>
   <li>Navigate to the project directory: <code>cd blogging</code></li>
   <li>Create a superuser to access the admin panel: <code>python manage.py createsuperuser</code></li>
   <li>Run the development server: <code>python manage.py runserver</code></li>
