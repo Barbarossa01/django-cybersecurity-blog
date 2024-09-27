@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5rem;
+            color: #343a40;
+        }
+        .table-container {
+            margin-left: 20px; /* Set a left margin to move it further left */
+            max-width: 800px; /* Limit the width of the table */
+        }
+        .table {
+            margin-top: 20px;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .table th {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+        .table tbody tr {
+            transition: background-color 0.3s;
+        }
+        .table tbody tr:hover {
+            background-color: #e9ecef;
+        }
+        .btn-danger {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-danger:hover {
+            background-color: #c82333;
+            color: white;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Applications</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Job Applications</h1>
+        <div class="table-container">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Portfolio Link</th>
+                        <th>Github Link</th>
+                        <th>About</th>
+                        <th>Applied At</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for application in applications %}
+                    <tr>
+                        <td>{{ application.name }}</td>
+                        <td>{{ application.email }}</td>
+                        <td><a href="{{ application.portfolio_link }}" target="_blank">{{ application.portfolio_link }}</a></td>
+                        <td><a href="{{ application.github_link }}" target="_blank">{{ application.github_link }}</a></td>
+                        <td>{{ application.about }}</td>
+                        <td>{{ application.applied_at }}</td>
+                        <td>
+                            <form action="{% url 'post:delete_application' application.pk %}" method="POST" style="display:inline;">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="7" class="text-center">No applications yet.</td>
+                    </tr>
+                    
+
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <a href="{% url 'post:list' %}">Go Home</a>
+
+        </div>
+    </div>
+</body>
+</html>

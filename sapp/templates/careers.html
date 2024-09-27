@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+{% extends 'base.html'%}
+{% load static%}
+
+
+
+
+{% block content %}
+
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 m-auto">
+				<!-- Page Title -->
+				<h1>Career in Cybersecurity</h1>
+				<!-- Page Description -->
+				<p>Join us in leading the fight against black-hat hackers. Our comprehensive training programs equip you with the skills needed to become an ethical hacker, allowing you to test and secure systems effectively. Together, we can build a safer digital world.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+
+
+<!--==================================
+=            Career Promo            =
+===================================-->
+<section class="section career-featured pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<!-- written-content -->
+					<div class="content">
+						<!-- Career heading -->
+						<h2>Who We're Looking For</h2>
+						<!-- Career Description -->
+						<p>We are seeking passionate individuals who are eager to become ethical hackers and cybersecurity professionals. Our ideal candidates possess a strong desire to learn hacking and security practices to effectively test and secure systems from black-hat hackers. If you are driven by curiosity and a commitment to safeguarding digital assets, we want you on our team!</p>
+					</div>
+					<!-- Promo Video -->
+					<div class="video">
+						<!-- Video Thumb -->
+						<img class="img-fluid shadow" src="{% static 'images/thumbs/promo-video-thumbnail.jpg'%}" alt="video-thumbnail">
+						<!-- Video Button -->
+						<div class="video-button video-box">
+							<a href="javascript:void(0)">
+								<i class="ti-control-play" data-video="https://www.youtube.com/embed/jrkvirglgaQ?autoplay=1"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Career Promo  ====-->
+
+
+<!--=============================
+=            Gallery            =
+==============================-->
+<section class="gallery">
+	<div class="container-fluid p-0">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+				<div class="image">
+					<img data-fancybox="gallery" href="{% static 'images/gallery/work1.webp'%}" class="img-fluid" src="{% static 'images/gallery/work1.webp'%}" alt="">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="image">
+					<img data-fancybox="gallery" href="{% static 'images/gallery/work2.png'%}" class="img-fluid" src="{% static 'images/gallery/work2.png'%} " alt="">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="image">
+					<img data-fancybox="gallery" href="{% static 'images/gallery/work3.webp'%}" class="img-fluid" src="{% static 'images/gallery/work3.webp'%} " alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	.image img {
+		width: 100%; /* Makes sure the image fills the width of the parent container */
+		height: 200px; /* Set a fixed height for all images */
+		object-fit: cover; /* Ensures the image is cropped while maintaining aspect ratio */
+	}
+	
+</style>
+<!--====  End of Gallery  ====-->
+
+<!--===============================
+=            Fun Facts            =
+================================-->
+<section class="company-fun-facts section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2>Benefits of Joining Our Team</h2>
+			</div>
+		</div>
+		<div class="row">		
+			<div class="col-lg-3 col-md-6">
+				<div class="fun-fact">
+					<!-- Icon -->
+					<i class="ti-timer"></i>
+					<h3>Flexible Hours</h3>
+					<p>Enjoy flexible work hours to balance your training and personal life while mastering ethical hacking skills.</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="fun-fact">
+					<!-- Icon -->
+					<i class="ti-filter"></i>
+					<h3>Free Snacks & Drinks</h3>
+					<p>Stay energized with complimentary snacks and drinks as you learn and train in cybersecurity.</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="fun-fact">
+					<!-- Icon -->
+					<i class="ti-game"></i>
+					<h3>Gaming Zone</h3>
+					<p>Take breaks in our gaming zone, fostering teamwork and relaxation as you enhance your hacking skills.</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="fun-fact">
+					<!-- Icon -->
+					<i class="ti-hummer"></i>
+					<h3>4 Working Days</h3>
+					<p>We promote a healthy work-life balance with a four-day work week, allowing you to focus on your training.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Fun Facts  ====-->
+
+<!--===============================
+=            Job lists            =
+================================-->
+<section class="job-list section pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-lg-10 m-auto">
+				<div class="block">
+					<div class="title text-center">
+						<h2>Job Opening</h2>
+					</div>
+					<!-- Job List -->
+					<div class="job">
+						<div class="content">
+							<!-- Job Title -->
+							<h3>Cybersecurity Trainer</h3>
+							<!-- Location -->
+							<p>Remote/Global</p>
+						</div>
+						<!-- Action Button -->
+						<div class="apply-button">
+							<a href="#" class="btn btn-main-sm" data-toggle="modal" data-target="#cybersecurity-trainer">View Details</a>
+							<!-- Modal -->
+
+							<div class="modal fade jd-modal" id="cybersecurity-trainer" tabindex="-1">
+
+								<div class="modal-dialog modal-lg">
+
+									<div class="modal-content">
+
+										<div class="modal-header">
+
+											<h5 class="modal-title">Cybersecurity Trainer</h5>
+
+											<button type="button" class="close" data-dismiss="modal">
+
+												<span>&times;</span>
+
+											</button>
+
+										</div>
+
+										<div class="modal-body">
+
+											<!-- Location -->
+
+											<div class="block-2">
+
+												<div class="title">
+
+													<p>Location</p>
+
+												</div>
+
+												<div class="details">
+
+													<p>Remote/Global</p>
+
+												</div>
+
+											</div>
+
+											<!-- About -->
+
+											<div class="block-2">
+
+												<div class="title">
+
+													<p>About You</p>
+                                                </div>
+
+                                                <div class="details">
+
+													<p>You are passionate about cybersecurity and ethical hacking. With experience in teaching and practical application of hacking techniques, you are skilled at educating others to identify vulnerabilities and secure systems from black-hat hackers.</p>
+
+                                                </div>
+
+											</div>
+
+											<!-- Requirements -->
+
+											<div class="block-2">
+
+												<div class="title">
+
+													<p>You will need to Have</p>
+
+												</div>
+
+												<div class="details">
+
+													<ul>
+
+														<li><span class="ti-forward"></span>5+ years of experience in cybersecurity and ethical hacking</li>
+
+														<li><span class="ti-forward"></span>Strong knowledge of penetration testing, security tools, and methodologies</li>
+
+														<li><span class="ti-forward"></span>Excellent presentation and communication skills</li>
+
+														<li><span class="ti-forward"></span>Ability to create engaging and effective training materials</li>
+
+													</ul>
+
+												</div>
+
+											</div>
+
+											<!-- Application Title -->
+
+											<div class="form-title">
+
+												<h3>Apply Now</h3>
+
+											</div>
+
+													<!-- Submit Button -->
+
+													<div class="col-12 text-right">
+
+														<button class="btn btn-main-md" onclick="window.location.href='{% url 'post:apply_for_job' %}';">Apply Now</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Job lists  ====-->
+
+</body>
+</html>
+
+{%endblock%}

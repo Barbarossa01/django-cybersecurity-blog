@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Submitted</title>
+</head>
+<body>
+    <style>
+        /* Reset some basic styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color for the body */
+body {
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark text color */
+    font-family: Arial, sans-serif; /* Font style */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Style the heading */
+h1 {
+    font-size: 2.5em; /* Larger font size */
+    margin-bottom: 10px; /* Space below heading */
+    color: #4CAF50; /* Green color for success */
+}
+
+/* Style the paragraph */
+p {
+    font-size: 1.2em; /* Slightly larger font size */
+    margin-bottom: 20px; /* Space below paragraph */
+    text-align: center; /* Center align text */
+}
+
+/* Style the link */
+a {
+    font-size: 1.1em; /* Font size for link */
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text color */
+    background-color: #007BFF; /* Blue background */
+    padding: 10px 20px; /* Padding for button look */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Link hover effect */
+a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+    </style>
+    <h1>Thank You for Your Feedback!</h1>
+    <p>Your feedback has been submitted successfully.</p>
+    <a href="{% url 'sapp:index' %}">Go Home</a>
+</body>
+</html>

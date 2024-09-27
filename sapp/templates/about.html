@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+{% extends 'base.html'%}
+{% load static%}
+
+
+
+
+{% block content %}
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 m-auto">
+				<!-- Page Title -->
+				<h1>About Us</h1>
+				<!-- Page Description -->
+				<p>We are a leading provider of ethical hacking and cybersecurity training. Our mission is to empower individuals with the skills they need to become ethical hackers, allowing them to effectively test and secure systems against black-hat hackers. Join us to learn the latest techniques in hacking and security, and help protect the digital world.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+
+
+<!--===============================
+=            Our Story            =
+================================-->
+<section class="section about p-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <div class="content text-center text-lg-left">
+                    <!-- Headline -->
+                    <h2>Our Mission in Cybersecurity.</h2>
+                    <!-- Story -->
+                    <p>At SudoZain, we believe in empowering individuals to become defenders of the digital realm. Our mission is to teach ethical hacking and cybersecurity skills, enabling our students to effectively test and secure systems against black-hat hackers. We are committed to providing innovative training that adapts to the evolving landscape of cybersecurity, ensuring our graduates are equipped with the knowledge and skills to tackle real-world challenges.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <!-- Story Image Slider -->
+                <div class="about-slider">
+                    <!-- Story Image -->
+                    <div class="item">
+                        <img class="w-100" src="{% static 'images/about/story-slider-01.jpg'%}" alt="slider-image">
+                    </div>
+                    <!-- Story Image -->
+                    <div class="item">
+                        <img class="w-100" src="{% static 'images/about/story-slider-01.jpg'%}" alt="slider-image">
+                    </div>
+                    <!-- Story Image -->
+                    <div class="item">
+                        <img class="w-100" src="{% static 'images/about/story-slider-01.jpg' %}" alt="slider-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====  End of Our Story  ====-->
+
+<!--================================
+=            Behind Story          =
+=================================-->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title mb-0">
+                    <h2>Why We Established Our Cybersecurity Training Program</h2>
+                    <p>In a world where cyber threats are constantly evolving, we recognized the urgent need for skilled professionals to combat these challenges. Our mission is to empower individuals to become ethical hackers who can protect systems from black-hat hackers. Through our comprehensive training programs, we teach hacking and security techniques that enable our students to test and secure systems effectively.</p>
+                    <p>By fostering a community of ethical hackers, we aim to create a safer digital landscape for everyone. Our training not only equips learners with technical skills but also emphasizes the importance of ethics in hacking. Join us in our commitment to security and integrity in the cyber realm.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====  End of Behind Story  ====-->
+
+<!--==================================
+=            Create Story            =
+===================================-->
+<section class="section create-stories pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="block">
+					<!-- Image -->
+					<img class="img-fluid" src="{% static 'images/blog/post-01.jpg'%}" alt="Story-Image">
+					<!-- Heading -->
+					<h3>Our Story</h3>
+					<!-- Story -->
+					<p>As a leading provider of ethical hacking and cybersecurity training, we empower individuals to become skilled ethical hackers. Our mission is to teach hacking and security techniques that enable our students to test and secure systems against black-hat hackers. We believe that knowledge is the first line of defense in the fight against cybercrime.</p>
+				</div>
+			</div>
+			<div class="col-lg-6 mt-5 mt-lg-0">
+				<div class="block">
+					<!-- Image -->
+					<img class="img-fluid" src="{% static 'images/blog/post-03.jpg'%}" alt="Story-Image">
+
+					<!-- Heading -->
+					<h3>What We Do</h3>
+					<!-- Story -->
+					<p>We provide comprehensive training programs in ethical hacking and cybersecurity. Our courses are designed to equip learners with the practical skills needed to identify vulnerabilities, secure systems, and mitigate risks. By fostering a community of ethical hackers, we aim to create a safer digital world for everyone.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Create Story  ====-->
+
+
+<!--=====================================
+=            Quotes Slider              =
+======================================-->
+<section class="section quotes pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-10 m-auto text-center">
+				<div class="quote-slider">
+					<div class="item mb-4">
+						<!-- Quote -->
+						<h2>Empowering individuals to become ethical hackers, protecting systems from cyber threats.</h2>
+						<!-- Company -->
+						<cite class="ml-0">- CyberSecurity Training</cite>
+					</div>
+					<div class="item mb-4">
+						<!-- Quote -->
+						<h2>Join us to learn the skills needed to outsmart black-hat hackers.</h2>
+						<!-- Company -->
+						<cite class="ml-0">- CyberSecurity Training</cite>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Quotes Slider  ====-->
+
+<!--=====================================
+=            Client Slider              =
+======================================-->
+<section class="section clients bg-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-10 m-auto text-center">
+				<h3>Featured In</h3>
+				<div class="client-slider">
+					<div class="item mb-4">
+						<img class="m-auto" src="{% static 'images/clients/business-finder.png'%}" alt="business-finder">
+					</div>
+					<div class="item mb-4">
+						<img class="m-auto" src="{% static 'images/clients/forbes.png' %}" alt="forbes">
+					</div>
+					<div class="item mb-4">
+						<img class="m-auto" src="{% static 'images/clients/venture-beat.png'%}" alt="venture-beat">
+					</div>
+					<div class="item mb-4">
+						<img class="m-auto" src="{% static 'images/clients/tech-crunch-new.png'%}" alt="TechCrunch">
+					</div>
+					<div class="item mb-4">
+						<img class="m-auto" src="{% static 'images/clients/forbes.png'%}" alt="forbes">
+					</div>
+					<div class="item mb-4">
+						<img class="m-auto" src="{% static 'images/clients/venture-beat.png'%}" alt="venture-beat">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Client Slider  ====-->
+
+
+</body>
+
+{% endblock %}

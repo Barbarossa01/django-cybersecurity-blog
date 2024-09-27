@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sMy Profile</title>
+    <style>
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #eef2f3;
+            color: #333;
+            margin: 0;
+            padding: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-align: center;
+            color: #2c3e50;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            color: #34495e;
+            margin: 10px 0;
+            text-align: center;
+        }
+        
+        .profile-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #4A90E2;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        
+        
+    </style>
+
+    <div class="profile-container authenticated">
+<h1>profile</h1>
+<br><br>
+{%if request.user.is_authenticated %}
+<h1>email:{{request.user.email}}</h1>
+<br>
+<h1>first name : {{request.user.first_name}}</h1>
+<br>
+<h1>last name : {{request.user.last_name}}</h1>
+<br>
+<h1>my profile picture:</h1>
+<img src="{{request.user.profile.avatar.url}}">
+<br><br>
+<a href="{% url 'post:list' %}">Go Home</a>
+
+{% endif %}
+    </div>

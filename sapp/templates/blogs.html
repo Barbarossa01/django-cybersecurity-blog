@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+<section class="section page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 m-auto">
+                <!-- Page Title -->
+                <h1>Blog</h1>
+                <!-- Page Description -->
+                <p>Description for the blog</p>
+                <p>Total articles: {{ all_articles.count }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+<!--====  Post Grid  ====-->
+<section class="post-grid section pt-0">
+    <div class="container">
+        <div class="row">
+
+			{% for item in all_articles %}
+			
+			<div class="col-lg-4 col-md-6">
+                <!-- =========== Post =============== -->
+                <article class="post-sm">
+                    <!-- Post Image -->
+                    <div class="post-thumb">
+                        <a href="{% url 'sapp:single-blog' pk=item.pk %}"><img class="w-100" src="{{ item.photo_article.url }}" alt="Post-Image"></a>        
+                    </div>
+                    <!-- Post Title -->
+                    <div class="post-title">
+                        <h3><a href="{% url 'sapp:single-blog' pk=item.pk %}">{{ item.title }}</a></h3>
+                    </div>
+                    <!-- Post Meta -->
+                    <div class="post-meta">
+                        <ul class="list-inline post-tag">
+                            <li class="list-inline-item">
+                                <img src="{{ item.user.profile.avatar.url }}" alt="author-thumb"> 
+
+                            </li>
+                            <li class="list-inline-item">
+                                <a>{{ item.user }}</a>
+                            </li>
+                            <li class="list-inline-item">
+                                {{ item.date }}
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Post Details -->
+                    <div class="post-details">
+                        <p>{{ item.description | truncatechars:200}} </p>
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+
+{% endblock %}

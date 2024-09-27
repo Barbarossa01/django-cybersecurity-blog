@@ -1,0 +1,51 @@
+<!-- sapp/templates/feedback.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Comments</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        strong {
+            color: #007BFF;
+        }
+        </style>
+            <h1>Feedback Comments</h1>
+            <ul>
+                {% for feedback in feedbacks %}
+                    <li>
+                        <strong>Name:</strong> {{ feedback.name }} <br>
+                        <strong>Email:</strong> {{ feedback.email }} <br>
+                        <strong>Subject:</strong> {{ feedback.subject }} <br>
+                        <strong>Message:</strong> {{ feedback.message }} <br>
+                        <small>Submitted at: {{ feedback.submitted_at }}</small>
+                    </li>
+                {% empty %}
+                    <li>No feedback available.</li>
+                {% endfor %}
+            </ul>
+            <a href="{% url 'post:list' %}">Go Home</a>
+        </body>
+</html>

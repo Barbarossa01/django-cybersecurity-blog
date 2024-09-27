@@ -1,0 +1,103 @@
+
+{% extends 'base.html'%}
+{% load static%}
+
+
+
+
+{% block content %}
+
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 m-auto">
+				<!-- Page Title -->
+				<h1>Privacy Policy</h1>
+				<!-- Page Description -->
+				<p>As a leading provider of ethical hacking and cybersecurity training, we empower individuals to become ethical hackers. Our mission is to equip you with the skills needed to test and secure systems against black-hat hackers, ensuring a safer digital world for everyone.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+
+
+<!--====================================
+=            Privacy Policy            =
+=====================================-->
+<section class="privacy section pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<nav class="privacy-nav">
+					<ul>
+						<li><a class="nav-link scrollTo" href="#userLicense" class="scrollTo">User License</a></li>
+						<li><a class="nav-link scrollTo" href="#disclaimer" class="scrollTo">Disclaimer</a></li>
+						<li><a class="nav-link scrollTo" href="#limitations" class="scrollTo">Limitations</a></li>
+						<li><a class="nav-link scrollTo" href="#governigLaw" class="scrollTo">Governing Law</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-lg-9">
+				<div class="block">
+					<!-- User License -->
+					<div id="userLicense" class="policy-item">
+						<div class="title">
+							<h3>Use License</h3>
+						</div>
+						<div class="policy-details">
+							<p>By participating in our ethical hacking and cybersecurity training, you agree to use the knowledge and skills gained responsibly. Our training is designed to empower individuals to test and secure systems, ensuring a safer digital environment against black-hat hackers.</p>
+							<p>Unauthorized use of hacking techniques for malicious purposes is strictly prohibited. We encourage all participants to adhere to ethical standards and legal guidelines while using their skills in the real world.</p>
+						</div>
+					</div>
+					<!-- Disclaimer -->
+					<div id="disclaimer" class="policy-item">
+						<div class="title">
+							<h3>Disclaimer</h3>
+						</div>
+						<div class="policy-details">
+							<p>The information provided during our training sessions is for educational purposes only. We do not endorse or encourage any illegal activities. Participants are responsible for how they apply the knowledge gained from our courses.</p>
+						</div>
+					</div>
+					<!-- Limitations -->
+					<div id="limitations" class="policy-item">
+						<div class="title">
+							<h3>Limitations</h3>
+						</div>
+						<div class="policy-details">
+							<p>While we strive to provide comprehensive training in ethical hacking and cybersecurity, we cannot guarantee proficiency in all scenarios. Participants should continuously seek to enhance their skills and knowledge beyond our training programs.</p>
+						</div>
+					</div>
+					<!-- Governing Law -->
+					<div id="governigLaw" class="policy-item">
+						<div class="title">
+							<h3>Governing Law</h3>
+						</div>
+						<div class="policy-details">
+							<p>This policy is governed by the laws applicable in the region where our training is conducted. By participating in our programs, you agree to comply with these laws and regulations regarding cybersecurity practices.</p>
+							<p>Any disputes arising from this policy or your participation in our training will be resolved under the jurisdiction of the relevant legal authority.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Privacy Policy  ====-->
+
+
+
+</html>
+
+{% endblock %}

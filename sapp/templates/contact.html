@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+{% extends 'base.html'%}
+{% load static%}
+
+
+
+
+{% block content %}
+
+
+
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 m-auto">
+				<!-- Page Title -->
+				<h1>Contact Us</h1>
+				<!-- Page Description -->
+				<p>At SudoZain, we are the leading provider of ethical hacking and cybersecurity training. Our mission is to empower individuals with the skills needed to become ethical hackers, enabling them to test and secure systems against black-hat hackers. Get in touch with us to learn more about our programs and how we can help you enhance your cybersecurity skills.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+<!--=====================================
+=            Address and Map            =
+======================================-->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+<script>
+    function initialize() {
+        var mapOptions = {
+            center: new google.maps.LatLng(51.507351, -0.127758),
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<section class="address">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 align-self-center">
+				<div class="block">
+					<div class="address-block text-center mb-5">
+						<div class="icon">
+							<i class="ti-mobile"></i>
+						</div>
+						<div class="details">
+							<h3>(00) 789 456 7890 (USA)</h3>
+							<h3>(88) 016 725 0455 (UK)</h3>
+						</div>
+					</div>
+					<div class="address-block text-center">
+						<div class="icon">
+							<i class="ti-map-alt"></i>
+						</div>
+						<div class="details">
+							<h3>36. St Michael’s St, Oxford OX1, UK</h3>
+							<h3>123, Pennsylvania, USA</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7 mt-5 mt-lg-0">
+				<div class="google-map">
+					<!-- Google Map -->
+					<div id="map_canvas" data-latitude="51.507351" data-longitude="-0.127758"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Address and Map  ====-->
+<section class="contact-form section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="mb-5 text-center"><a href='{% url 'sapp:feedback_form'%}'>Drop us a mail</a></h2>
+			</div>
+
+			
+		</div>
+	</div>
+</section>
+
+
+</body>
+
+</html>
+
+{%endblock%}

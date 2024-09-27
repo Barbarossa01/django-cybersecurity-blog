@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New Post</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        form p {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            color: red;
+            padding-left: 20px;
+        }
+
+        .form-field {
+            margin-bottom: 15px;
+        }
+
+        .form-field label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-field input, 
+        .form-field textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Add a New Post</h2>
+
+
+    
+        <form action="{% url 'post:create' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            {% if form.errors %}
+                <ul>
+                    {% for field, errors in form.errors.items %}
+                        <li>{{ field }}: {{ errors | striptags }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            <input type="submit" value="Create">
+
+
+        </form>
+<br><br>
+        <a href="{% url 'post:list' %}">Go Home</a>
+
+        
+    </div>
+
+</body>
+</html>

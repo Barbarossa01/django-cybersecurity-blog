@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+{% extends 'base.html'%}
+{% load static%}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+<!--====================================
+=            Single Article            =
+=====================================-->
+<section class="section blog-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 m-auto">
+				<!-- Single Post -->
+				<article class="single-post">
+					<!-- Post title -->
+					<div class="post-title text-center">
+						<h1>{{article.title}}</h1>
+						<!-- Tags -->
+						<ul class="list-inline post-tag">
+							<li class="list-inline-item">
+                                <img src="{{ article.user.profile.avatar.url }}" alt="author-thumb"> 
+							</li>
+							<li class="list-inline-item">
+								<a>{{article.user}}</a>
+							</li>
+							<li class="list-inline-item">
+								<a>{{article.date}}</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Post body -->
+					<div class="post-body">
+						<!-- Feature Image -->
+						<div class="feature-image">
+							<img class="img-fluid" src="{{article.photo_article.url}}" alt="feature-image">
+						</div>
+						<!-- Paragrapgh -->
+						<p>{{article.description}}</p>
+						<!-- Blockquote -->
+						<div class="quote">
+						</div>
+						<!-- Post Image -->
+						<div class="post-image text-center">
+						</div>
+						<!-- Paragrapgh -->
+					</div>
+				</article>
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Single Article  ====-->
+
+<!--======================================
+=            Related Article            =
+=======================================-->
+<section class="section related-articles bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 title">
+                <!-- Section Title -->
+                <h2>Related Articles</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for related_article in last_three_articles %}
+            <div class="col-lg-4 col-md-6">
+                <!-- Post -->
+                <article class="post-sm">
+                    <!-- Post Image -->
+                    <div class="post-thumb">
+                        <a href="{% url 'sapp:single-blog' pk=related_article.pk %}"><img class="w-100" src="{{related_article.photo_article.url}}" alt="Post-Image"></a>        
+                    </div>
+                    <!-- Post Title -->
+                    <div class="post-title">
+                        <h3><a href="{% url 'sapp:single-blog' pk=related_article.pk %}">{{related_article.title}}</a></h3>
+                    </div>
+                    <!-- Post Meta -->
+                    <div class="post-meta">
+                        <ul class="list-inline post-tag">
+                            <li class="list-inline-item">
+                                <img src="{{related_article.user.profile.avatar.url}}" alt="author-thumb">
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="{% url 'sapp:single-blog' pk=related_article.pk %}">{{related_article.user}}</a>
+                            </li>
+                            <li class="list-inline-item">
+                                {{related_article.date}}
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Post Details -->
+                    <div class="post-details">
+                        <p>{{related_article.description | truncatechars:200}} </p>
+
+                    </div>
+                </article>
+            </div> <!-- Closing div for col-lg-4 col-md-6 -->
+            {% endfor %}
+        </div> <!-- Closing div for row -->
+    </div> <!-- Closing div for container -->
+</section>
+<!--====  End of Related Article  ====-->
+
+</body>
+
+</html>
+
+{% endblock %}

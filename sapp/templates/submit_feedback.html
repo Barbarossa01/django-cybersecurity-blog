@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="contact-form section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-5 text-center">
+                        <a href='{% url 'sapp:feedback_form' %}'>Drop us a mail</a>
+                    </h2>
+                </div>
+                <div class="col-12">
+                    <h1>Submit Feedback</h1>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="col-md-6 mb-2">
+                            <br>
+                            {{ form.as_p }}
+                            <br>
+                        </div>
+                        <div class="col-12 text-right">
+                            <button type="submit">Submit Feedback</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        form p {
+            padding-bottom: 15px; /* Adjust the padding value as needed */
+        }
+    </style>
+{% endblock %}

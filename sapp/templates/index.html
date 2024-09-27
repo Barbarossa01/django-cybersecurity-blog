@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+{% extends 'base.html'%}
+{% load static%}
+
+
+
+
+{% block content %}
+
+
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+
+    
+    <!--====================================
+    =            Hero Section            =
+    =====================================-->
+    <section class="section gradient-banner">
+        <div class="shapes-container">
+            <div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
+            <div class="shape" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
+            <div class="shape" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200"></div>
+            <div class="shape" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
+            <div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
+            <div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
+            <div class="shape" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></div>
+            <div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="200"></div>
+            <div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="100"></div>
+            <div class="shape" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500"></div>
+            <div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="200"></div>
+            <div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="100"></div>
+            <div class="shape" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
+            <div class="shape" data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"></div>
+            <div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="100"></div>
+            <div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
+                    <h1 class="text-white font-weight-bold mb-4">Become an Ethical Hacker with Our Training</h1>
+                    <p class="text-white mb-5">Join us to learn the art of ethical hacking and cybersecurity. We equip you with the skills to test and secure systems against black-hat hackers.</p>
+                    <a href="{% url 'sapp:faq'%}" class="btn btn-main-md">Start Your Journey</a>
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-2">
+                    <img class="img-fluid" src="{% static 'images/index1.webp'%}" alt="screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====  End of Hero Section  ====-->
+    
+    <section class="section pt-0 position-relative pull-top">
+        <div class="container">
+            <div class="rounded shadow p-5 bg-white">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+                        <i class="ti-paint-bucket text-primary h1"></i>
+                        <h3 class="mt-4 text-capitalize h5 ">themes made easy</h3>
+                        <p class="regular text-muted">At sudozain, we simplify the learning process for aspiring ethical hackers. Our comprehensive programs are designed to equip you with the essential skills needed to combat cyber threats and secure systems effectively.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0 text-center">
+                        <i class="ti-shine text-primary h1"></i>
+                        <h3 class="mt-4 text-capitalize h5 ">powerful design</h3>
+                        <p class="regular text-muted">Our training modules are crafted with a powerful design that enhances your learning experience. We focus on practical applications, ensuring you gain hands-on experience with real-world scenarios to prepare you for the challenges of ethical hacking.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 mt-lg-0 text-center">
+                        <i class="ti-thought text-primary h1"></i>
+                        <h3 class="mt-4 text-capitalize h5 ">creative content</h3>
+                        <p class="regular text-muted">Our curriculum is rich with creative content that engages and inspires. We provide unique insights and strategies to help you understand the mindset of black-hat hackers, enabling you to test and secure systems more effectively.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--==================================
+    =            Feature Grid            =
+    ===================================-->
+<section class="feature section pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto justify-content-center">
+                <!-- Feature Mockup -->
+                <div class="image-content" data-aos="fade-right">
+                    <img class="img-fluid" src="{% static 'images/index2.webp' %}" alt="iphone">
+                </div>
+            </div>
+            <div class="col-lg-6 mr-auto align-self-center">
+                <div class="feature-content">
+                    <!-- Feature Title -->
+                    <h2>Become an Ethical Hacker and Secure Systems from Threats</h2>
+                    <!-- Feature Description -->
+                    <p class="desc">Our training programs equip you with the skills to test and secure systems against black-hat hackers. Learn ethical hacking techniques and best practices to ensure cybersecurity in today’s digital landscape.</p>
+                </div>
+                <!-- Testimonial Quote -->
+                <div class="testimonial">
+                    <p>
+                        "This training transformed my understanding of cybersecurity. I now feel equipped to tackle real-world security challenges."
+                    </p>
+                    <ul class="list-inline meta">
+                        <li class="list-inline-item">
+                            <img src="{% static 'images/user1.png'%}" alt="">
+                        </li>
+                        <li class="list-inline-item">Alex Johnson, Ethical Hacker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="feature section pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto align-self-center">
+                <div class="feature-content">
+                    <!-- Feature Title -->
+                    <h2>Learn to Protect Against Cyber Threats</h2>
+                    <!-- Feature Description -->
+                    <p>Our comprehensive courses cover everything from basic security principles to advanced hacking techniques, empowering you to defend systems effectively and ethically.</p>
+                </div>
+                <!-- Testimonial Quote -->
+                <div class="testimonial">
+                    <p>
+                        "The insights gained from this training are invaluable. I can now contribute significantly to my organization's security posture."
+                    </p>
+                    <ul class="list-inline meta">
+                        <li class="list-inline-item">
+                            <img src="{% static 'images/user2.png'%}" alt="">
+                        </li>
+                        <li class="list-inline-item">Sara Williams, Cybersecurity Specialist</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 mr-auto justify-content-center">
+                <!-- Feature mockup -->
+                <div class="image-content" data-aos="fade-left">
+                    <img class="img-fluid" src="{% static 'images/index3.jpeg'%}" alt="ipad">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====  End of Feature Grid  ====-->
+
+    
+<!--==============================
+=            Services            =
+==============================-->
+<section class="service section bg-gray">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Empowering Ethical Hackers</h2>
+                    <p>Our training programs equip individuals with the skills to become ethical hackers, enabling them to test and secure systems against black-hat hackers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6 align-self-center">
+                <!-- Feature Image -->
+                <div class="service-thumb left" data-aos="fade-right">
+                    <img class="img-fluid" src="{% static 'images/index4.jpg'%}" alt="iphone-ipad">
+                </div>
+            </div>
+            <div class="col-lg-5 mr-auto align-self-center">
+                <div class="service-box">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-xs-12">
+                            <!-- Service 01 -->
+                            <div class="service-item">
+                                <!-- Icon -->
+                                <i class="ti-bookmark"></i>
+                                <!-- Heading -->
+                                <h3>Comprehensive Training</h3>
+                                <!-- Description -->
+                                <p>Our courses cover everything from basic hacking techniques to advanced security measures, ensuring a deep understanding of cybersecurity.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <!-- Service 02 -->
+                            <div class="service-item">
+                                <!-- Icon -->
+                                <i class="ti-pulse"></i>
+                                <!-- Heading -->
+                                <h3>Hands-On Experience</h3>
+                                <!-- Description -->
+                                <p>Participants gain practical skills through real-world simulations and exercises, preparing them for real cybersecurity challenges.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <!-- Service 03 -->
+                            <div class="service-item">
+                                <!-- Icon -->
+                                <i class="ti-bar-chart"></i>
+                                <!-- Heading -->
+                                <h3>Expert Instructors</h3>
+                                <!-- Description -->
+                                <p>Learn from industry professionals who bring years of experience and insights into the evolving world of cybersecurity.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <!-- Service 04 -->
+                            <div class="service-item">
+                                <!-- Icon -->
+                                <i class="ti-panel"></i>
+                                <!-- Heading -->
+                                <h3>Certification Programs</h3>
+                                <!-- Description -->
+                                <p>Get certified to validate your skills and boost your career in the cybersecurity field, opening doors to new opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====  End of Services  ====-->
+
+    
+    
+    <!--=================================
+    =            Video Promo            =
+    ==================================-->
+    <section class="video-promo section bg-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-block">
+                        <!-- Heading -->
+                        <h2>Watch Our Promo Video</h2>
+                        <!-- Promotional Speech -->
+                        <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et,
+                            porttitor at sem. Vivamus </p>
+                        <!-- Popup Video -->
+                        <a data-fancybox href="https://www.youtube.com/watch?v=jrkvirglgaQ">
+                            <i class="ti-control-play video"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====  End of Video Promo  ====-->
+    
+  <!--=================================
+    =            Testimonial            =
+    ==================================-->
+<section class="section testimonial" id="testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Testimonial Slider -->
+                <div class="testimonial-slider owl-carousel owl-theme">
+                    <!-- Testimonial 01 -->
+                    <div class="item">
+                        <div class="block shadow">
+                            <!-- Speech -->
+                            <p>
+                                "The ethical hacking training provided by this company transformed my career. I now have the skills to test and secure systems effectively, ensuring they are protected against black-hat hackers."
+                            </p>
+                            <!-- Person Thumb -->
+                            <div class="image">
+                                <img src="{% static 'images/user3.png'%}" alt="image">
+                            </div>
+                            <!-- Name and Company -->
+                            <cite>Lena Headey, Ethical Hacker</cite>
+                        </div>
+                    </div>
+                    <!-- Testimonial 02 -->
+                    <div class="item">
+                        <div class="block shadow">
+                            <!-- Speech -->
+                            <p>
+                                "The courses offered are comprehensive and practical. I appreciated the real-world scenarios that prepared me for actual hacking challenges."
+                            </p>
+                            <!-- Person Thumb -->
+                            <div class="image">
+                                <img src="{% static 'images/user4.png'%}" alt="image">
+                            </div>
+                            <!-- Name and Company -->
+                            <cite>Angelina Jolie, Cybersecurity Analyst</cite>
+                        </div>
+                    </div>
+                    <!-- Testimonial 03 -->
+                    <div class="item">
+                        <div class="block shadow">
+                            <!-- Speech -->
+                            <p>
+                                "I never thought I could become an ethical hacker until I took this training. The instructors are knowledgeable, and the material is engaging."
+                            </p>
+                            <!-- Person Thumb -->
+                            <div class="image">
+                                <img src="{% static 'images/user5.png'%}" alt="image">
+                            </div>
+                            <!-- Name and Company -->
+                            <cite>Will Smith, Security Consultant</cite>
+                        </div>
+                    </div>
+                    <!-- Testimonial 04 -->
+                    <div class="item">
+                        <div class="block shadow">
+                            <!-- Speech -->
+                            <p>
+                                "Thanks to this training, I am now confident in my ability to identify and mitigate security vulnerabilities. Highly recommended for anyone looking to enter the field!"
+                            </p>
+                            <!-- Person Thumb -->
+                            <div class="image">
+                                <img src="{% static 'images/user7.png'%}" alt="image">
+                            </div>
+                            <!-- Name and Company -->
+                            <cite>Michael Johnson, Penetration Tester</cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====  End of Testimonial  ====-->
+
+
+    </body>
+    
+    </html>
+    
+
+{% endblock %}
