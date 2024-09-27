@@ -5,35 +5,35 @@
 <h3>Features</h3>
 User Authentication: Users can register and log in to access their personal posts.<br>
 CRUD Operations:
-    Users can create, read, update, and delete their own posts.
-    Superusers can manage all posts in the system.
+<br>    Users can create, read, update, and delete their own posts.
+<br>   Superusers can manage all posts in the system.
+<br>
+<br>Feedback System:
+ <br>   Anonymous users can submit feedback.
+ <br>   Only superusers can view feedback comments.
 
-Feedback System:
-    Anonymous users can submit feedback.
-    Only superusers can view feedback comments.
+<br>Job Application:
+    <br>Users can apply for job openings.
+    <br>Superusers can view and manage job applications.
 
-Job Application:
-    Users can apply for job openings.
-    Superusers can view and manage job applications.
-
-<h3>Test GIFs</h3>
-Here are some test demonstrations showing how the main functions of the application work.
-    Feedback Test:
-    Post Test:
-    Apply Test (Anonymous):
-    Editing Post in Admin Panel:
-    Related Post Functionality:
-    Broken Access Control Test:
-      An unprivileged user (Anas) can delete a post created by another user (Barbarossa) by manipulating the URL.
-    Fixed Broken Access Control:
-      This issue was fixed using UserPassesTestMixin and a custom test_func to check if the user is the post owner or a superuser.
-<h3>Technology Stack</h3>
-Backend Framework: Django
-Database: SQLite3 (default)
-Frontend: HTML, CSS
-<h3>Installation</h3>
-1. Clone the repository: git clone <repository-url>
-2. Navigate to the project directory: cd blogging
-3. Create a superuser to access the admin panel: python manage.py createsuperuser
-4. Run the development server: python manage.py runserver
-5. Open your browser and navigate to http://127.0.0.1:8000/
+<br><h3>Test GIFs</h3>
+<br>Here are some test demonstrations showing how the main functions of the application work.
+    <br>Feedback Test:
+    <br>Post Test:
+<br>    Apply Test (Anonymous):
+   <br> Editing Post in Admin Panel:
+   <br> Related Post Functionality:
+   <br> Broken Access Control Test:
+    <br>  An unprivileged user (Anas) can delete a post created by another user (Barbarossa) by manipulating the URL.
+    <br> Fixed Broken Access Control:
+     <br> This issue was fixed using UserPassesTestMixin and a custom test_func to check if the user is the post owner or a superuser.
+<br> <h3>Technology Stack</h3>
+<br>Backend Framework: Django
+<br>Database: SQLite3 (default)
+<br>Frontend: HTML, CSS
+<br><h3>Installation</h3>
+<br>1. Clone the repository: git clone <repository-url>
+<br>2. Navigate to the project directory: cd blogging
+<br>3. Create a superuser to access the admin panel: python manage.py createsuperuser
+<br>4. Run the development server: python manage.py runserver
+<br>5. Open your browser and navigate to http://127.0.0.1:8000/
